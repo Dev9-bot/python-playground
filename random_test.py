@@ -1,6 +1,6 @@
 import random
 
-secret_number = 67
+secret_number = random.randint(1, 100)
 attempts = 0
 
 while True:
