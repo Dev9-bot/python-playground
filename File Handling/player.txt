@@ -1,0 +1,5 @@
+Name: Dev
+Level: 2
+Weapon: Vandal
+Rank: Gold
+XP: 150
