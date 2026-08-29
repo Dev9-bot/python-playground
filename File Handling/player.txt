@@ -1,5 +1,5 @@
-Name: Dev
-Level: 2
-Weapon: Vandal
-Rank: Gold
+name: Dev
+level: 2
+weapon: Vandal
+rank: Gold
 XP: 150
