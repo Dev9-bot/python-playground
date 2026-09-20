@@ -1,5 +1,6 @@
 name: Dev
-level: 2
-weapon: Vandal
-rank: Gold
-XP: 150
+level: 21
+xp: 3220
+strength: 21
+speed: 0
+intelligence: 0
