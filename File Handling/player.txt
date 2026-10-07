@@ -1,6 +1,6 @@
-name: Dev
-level: 21
-xp: 3220
-strength: 21
-speed: 0
+name: nihar
+level: 69
+xp: 67
+strength: 67
+speed: 2
 intelligence: 0
