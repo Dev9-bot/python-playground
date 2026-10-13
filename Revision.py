@@ -1,30 +1,50 @@
+
 name = input("Enter your name: ")
-lvl = input("Enter your Lvl: ")
-xp = input("Enter your XP: ")
-print(name, "You have", lvl, "points to put into str speed and int. You have", xp, "XP to spend on upgrading.")
-strength = int(input("How many points do you want to put into strength? "))
-speed = int(input("How many points do you want to put into speed? "))  
-intelligence = int(input("How many points do you want to put into intelligence? "))
-total_points = strength + speed + intelligence
-if total_points <= int(lvl):
-    print("Points allocated correctly.")
-else:
-    print("Error: The total points allocated do not match your level.")
+lvl = int(input("Enter your level: "))
+xp = int(input("Enter your XP: "))
+
+print(
+    f"{name}, you have {lvl} points to allocate "
+    f"and {xp} XP available."
+)
+
+total_points = 0
+
+while total_points != lvl:
+    strength = int(input("Points for strength: "))
+    speed = int(input("Points for speed: "))
+    intelligence = int(input("Points for intelligence: "))
+
+    total_points = strength + speed + intelligence
+
+    if total_points != lvl:
+        print("Incorrect allocation. Try again.")
+    else:
+        print("Points allocated correctly.")
+
 player = {
     "name": name,
-    "level": int(lvl),
-    "xp": int(xp),
+    "level": lvl,
+    "xp": xp,
     "strength": strength,
     "speed": speed,
     "intelligence": intelligence
 }
-with open(r"D:\Coding\Python\FreshmanMonarch\File Handling\player.txt", "w") as file:
-    for key, value in player.items():
-       file.write(f"{key}: {value}\n")
-read_file = input("Do you want to read the stats? (yes/no): ")
 
-if read_file.lower() == "yes":
-    with open(r"D:\Coding\Python\FreshmanMonarch\File Handling\player.txt", "r") as read_file:
-        print(read_file.read())
-else:
-    print("Stats saved successfully.")    
+with open(
+    r"D:\Coding\Python\FreshmanMonarch\File Handling\player.txt",
+    "w"
+) as file:
+    for key, value in player.items():
+        file.write(f"{key}: {value}\n")
+
+print("Stats saved successfully.")
+
+read_stats = input("Do you want to read the stats? (y/n): ")
+
+if read_stats.lower() == "y":
+    with open(
+        r"D:\Coding\Python\FreshmanMonarch\File Handling\player.txt",
+        "r"
+    ) as file:
+        print(file.read())
