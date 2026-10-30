@@ -12,3 +12,4 @@ Sorry for the gap between sessions. I had to take some time away from coding bec
 I'm back now and ready to continue the journey. Today I completed the Python fundamentals section, including importing, and I'm officially moving on to OOP.
 The grind resumes. 🗿
 -Imma start learning OOPS
+- Guy's my CAE for college is there so I haven't been coding for a while and just studying for exams after Diwali i will start again or in Diwali if I get time
